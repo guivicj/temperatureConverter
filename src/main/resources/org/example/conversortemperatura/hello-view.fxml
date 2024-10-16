@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="1043.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.conversortemperatura.HelloController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="132.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Captura%20de%20pantalla%202024-10-05%20122759.png" />
+         </image></ImageView>
+      <Pane layoutX="198.0" layoutY="56.0" prefHeight="380.0" prefWidth="706.0" style="-fx-border-color: orange; -fx-border-style: solid;">
+         <children>
+            <Text layoutX="40.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFldDate" alignment="CENTER" layoutX="313.0" layoutY="83.0" prefHeight="25.0" prefWidth="270.0" />
+            <Text layoutX="40.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce la Temperatura">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="40.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperatura Convertida">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFldTemperature" alignment="CENTER" layoutX="313.0" layoutY="177.0" prefHeight="25.0" prefWidth="270.0" promptText="Introduce la temperatura en Cº" />
+            <TextField fx:id="txtFldConversion" alignment="CENTER" layoutX="313.0" layoutY="261.0" prefHeight="25.0" prefWidth="270.0" promptText="Resultado de la conversión" />
+         </children></Pane>
+      <Pane layoutX="475.0" layoutY="37.0" prefHeight="33.0" prefWidth="325.0" style="-fx-background-color: #fff;" />
+      <Text layoutX="483.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONVERSOR DE TEMPERATURA" wrappingWidth="325.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnConvertToCelsius" layoutX="198.0" layoutY="460.0" mnemonicParsing="false" onAction="#onClickCelsius" prefHeight="37.0" prefWidth="209.0" text="Celsius">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConvertToFahrenheit" layoutX="447.0" layoutY="460.0" mnemonicParsing="false" onAction="#onClickFahrenheit" prefHeight="37.0" prefWidth="209.0" text="Fahrenheit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConvertToKelvin" layoutX="696.0" layoutY="460.0" mnemonicParsing="false" onAction="#onClickKelvin" prefHeight="37.0" prefWidth="209.0" text="Kelvin">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReinitialize" layoutX="447.0" layoutY="515.0" mnemonicParsing="false" onAction="#onClickReinitialize" prefHeight="37.0" prefWidth="209.0" text="Reiniciar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
